@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32f292352335dc72a6b2b2c73eec9280 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_32f292352335dc72a6b2b2c73eec9280" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_32f292352335dc72a6b2b2c73eec9280 = L.map(
+                "map_32f292352335dc72a6b2b2c73eec9280",
+                {
+                    center: [-25.0, 135.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_537d500be47e1105292b9c293dc724e6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var circle_d9e1512295ed8020bcc9ba27157770a1 = L.circle(
+                [-35.2809, 149.13],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_d9e1512295ed8020bcc9ba27157770a1.bindTooltip(
+                `<div>
+                     State: Australian Capital Territory<br>Births to Deaths Ratio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb1222768acf09ffe0f61d2cb1d75d2b = L.marker(
+                [-35.2809, 149.13],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_5a12a9dae3e3aa009d6bd5dcc5bd8609 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 15\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_cb1222768acf09ffe0f61d2cb1d75d2b.setIcon(div_icon_5a12a9dae3e3aa009d6bd5dcc5bd8609);
+        
+    
+            var circle_8ea047632554db10508944fae76cb122 = L.circle(
+                [-33.8688, 151.2093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_8ea047632554db10508944fae76cb122.bindTooltip(
+                `<div>
+                     State: New South Wales<br>Births to Deaths Ratio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb5dde7a2394dd5ed7061be7d28ddea3 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_112d658f3db16c05c39fe3c067962e67 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 246\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_fb5dde7a2394dd5ed7061be7d28ddea3.setIcon(div_icon_112d658f3db16c05c39fe3c067962e67);
+        
+    
+            var circle_1457222e9f8ce7fb43cad2185be1ba2c = L.circle(
+                [-12.4634, 130.8456],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_1457222e9f8ce7fb43cad2185be1ba2c.bindTooltip(
+                `<div>
+                     State: Northern Territory<br>Births to Deaths Ratio: 279.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0bb52651dd51fea7a1510af33382af1 = L.marker(
+                [-12.4634, 130.8456],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_211e824e79004243818240cb9ef8b4e1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 5\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_d0bb52651dd51fea7a1510af33382af1.setIcon(div_icon_211e824e79004243818240cb9ef8b4e1);
+        
+    
+            var circle_7d17bfc9c611fdb0b50de6aac4520ddf = L.circle(
+                [-20.9176, 142.7028],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_7d17bfc9c611fdb0b50de6aac4520ddf.bindTooltip(
+                `<div>
+                     State: Queensland<br>Births to Deaths Ratio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ad960aac01f21281e67806255596ed8 = L.marker(
+                [-20.9176, 142.7028],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_1768c577ff02cdb0349976ace8a32ef5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 227\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_1ad960aac01f21281e67806255596ed8.setIcon(div_icon_1768c577ff02cdb0349976ace8a32ef5);
+        
+    
+            var circle_31c8c3c1e841d571b8360b7d652eb3e9 = L.circle(
+                [-34.9285, 138.6007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_31c8c3c1e841d571b8360b7d652eb3e9.bindTooltip(
+                `<div>
+                     State: South Australia<br>Births to Deaths Ratio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb2536f2c8cbc05e3134aebe87bc3b0e = L.marker(
+                [-34.9285, 138.6007],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_20f89adca7a7695bee9dc405b35da9d1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 98\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_cb2536f2c8cbc05e3134aebe87bc3b0e.setIcon(div_icon_20f89adca7a7695bee9dc405b35da9d1);
+        
+    
+            var circle_2caf173cbd76864d9fca270256aeaa64 = L.circle(
+                [-42.8821, 147.3272],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_2caf173cbd76864d9fca270256aeaa64.bindTooltip(
+                `<div>
+                     State: Tasmania<br>Births to Deaths Ratio: 156.91
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56c5ac60e68da33d31ada3c43cb6ee7d = L.marker(
+                [-42.8821, 147.3272],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_21b74233114168f6618285b2b2829979 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 9\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_56c5ac60e68da33d31ada3c43cb6ee7d.setIcon(div_icon_21b74233114168f6618285b2b2829979);
+        
+    
+            var circle_a3fda9458696dfecb285e7a962e7447f = L.circle(
+                [-37.8136, 144.9631],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_a3fda9458696dfecb285e7a962e7447f.bindTooltip(
+                `<div>
+                     State: Victoria<br>Births to Deaths Ratio: nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4a72b840ffd6acedb29e91780f5c8b2 = L.marker(
+                [-37.8136, 144.9631],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_fb1580ebb38305ccc9f9bbc882228325 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 334\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_d4a72b840ffd6acedb29e91780f5c8b2.setIcon(div_icon_fb1580ebb38305ccc9f9bbc882228325);
+        
+    
+            var circle_b58df8e7902f06a5808f73f12a046300 = L.circle(
+                [-31.9505, 115.8605],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 3}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            circle_b58df8e7902f06a5808f73f12a046300.bindTooltip(
+                `<div>
+                     State: Western Australia<br>Births to Deaths Ratio: 644.49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67c6c0a06b87770880798d342e40957a = L.marker(
+                [-31.9505, 115.8605],
+                {}
+            ).addTo(map_32f292352335dc72a6b2b2c73eec9280);
+        
+    
+            var div_icon_daf7bbf0695b80eddf21e477f323cdde = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt;\u0027\u003eTweet Count: 67\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_67c6c0a06b87770880798d342e40957a.setIcon(div_icon_daf7bbf0695b80eddf21e477f323cdde);
+        
+</script>
+</html>

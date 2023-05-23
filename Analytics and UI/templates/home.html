@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+         body {
+            background-image: url('{{ url_for("static", filename="/images/bg6.webp") }}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #FFF8DC; /* For a space theme */
+            font-family: 'Courier New', Courier, monospace; /* Gives a digital, space-like vibe */
+        }
+
+        .transparent-bg {
+            background-color: rgba(30, 30, 30, 0.75); /* Darker, semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .scenario-tiles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .scenario-tile {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="transparent-bg">
+    <h1>Team 43 Cluster and Cloud Computing :P </h1>
+    <div class="scenario-tiles">
+        <div class="scenario-tile" onclick="location.href='/scenario1';">
+            <h2>Bitcoin Price vs UFO References</h2>
+            <p>Analyzing the correlation between Bitcoin prices and tweet references to UFOs.</p>
+        </div>
+        <div class="scenario-tile" onclick="location.href='/scenario2';">
+            <h2>Births & Deaths vs UFO References</h2>
+            <p>Exploring the relationship between birth and death rates and UFO sightings.</p>
+        </div>
+        <div class="scenario-tile" onclick="location.href='/scenario3';">
+            <h2>Dynamic Mastodon Toot Harvestor</h2>
+            <p>Investigating how much of mastodon toots contain UFO references vs twitter's stats</p>
+        </div>
+        <div class="scenario-tile" onclick="location.href='/scenario4';">
+            <h2>Statewise Milk Production vs UFO References</h2>
+            <p>Examining the link between milk production by State and UFO sightings.</p>
+        </div>
+        <div class="scenario-tile" onclick="location.href='/scenario5';">
+            <h2>Mcdonald's Locations vs UFO Tweets Sentiment</h2>
+            <p>Looking into how the locations of McDonald's outlets affect UFO-related tweet sentiments.</p>
+        </div>
+        <div class="scenario-tile" onclick="location.href='/general';">
+            <h2>General Twitter Demographics</h2>
+            <p>A Simple Heatmap About Our Whole Dataset Which Contains BBOX Info.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
