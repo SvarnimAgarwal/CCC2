@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# docker build -t test-harvestor .
+docker run -d -p 5984:5984 -e MASTODON_ACCESS_TOKEN_SOCIAL=Hjv8XHIQMo042o7nTXbWC15WkUtWUd9bekh6s5lz-L0 -e MASTODON_ACCESS_TOKEN_AU=pwvGgbL4Kapd2kYQGTWd20ZqcHP0lTqR9ioyDNlihPo -e MASTODON_ACCESS_TOKEN_CLOUD=B0T98uen8Mt4I-xygsG_CVX3e54m1DFGJMUdpjRXZq4 -e MASTODON_ACCESS_TOKEN_WORLD=bGflW2L837cKzBEb36_8Hl6SuGQ0d6AaWgrsrx7ij3I -e MASTODON_ACCESS_TOKEN_UK=Ep6V4XkMGxFtokagetZAffCotR9ZVk-7Nffto-Oio3k -e DB_URL="http://172.26.134.93:5984/" -e DB_USERNAME="admin" -e DB_PASSWORD="admin" djang9303/mastodon-harvestor:1.5
