@@ -3,13 +3,21 @@ Cloud Computinf Assignment 2
 
 This repository contains the source code for assignment 2 of the COMP90024 Cluster and Cloud Computing course at the University of Melbourne in 2023.
 
+
 YouTube Walkthrough of the UI:
 
+//TODO
+
 Team members:
+
 Svarnim Agarwal (Student ID: 1428737)
+
 Mohit Rudraraju Suresh (Student ID: 1390758)
+
 Shashank Bhat (Student ID: 1344736)
+
 Madhumita V (Student ID: 1383502)
+
 Dong Hyeog Jang (Student ID: 0582238)
 
 -----------------------
