@@ -4,6 +4,6 @@
     - host_vars/harvestor.yaml
   gather_facts: true
   roles:
+    - role: install-python-dependency
     - role: install-docker
-    - role: launch-harvestor
     - role: join-harvestor-swarm

@@ -1,13 +1,13 @@
 [harvestor-master]
-172.26.130.178
+172.26.135.35
 
 [harvestor-worker]
-172.26.136.158
+172.26.128.223
 
 [harvestor-master:vars]
 ansible_user=ubuntu
-ansible_ssh_private_key_file=~/.ssh/mastodon.pem
+ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [harvestor-worker:vars]
 ansible_user=ubuntu
-ansible_ssh_private_key_file=~/.ssh/mastodon.pem
+ansible_ssh_private_key_file=~/.ssh/id_rsa

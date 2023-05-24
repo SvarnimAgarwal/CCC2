@@ -1,0 +1,21 @@
+---
+- name: Create Docker service
+  become: yes
+  community.general.docker_swarm_service:
+    state: present
+    name: mastodon-harvestor
+    image: djang9303/mastodon-harvestor:1.5
+    publish:
+      - mode: ingress
+        target_port: 5984
+        published_port: 5984
+    replicas: 3
+    env:
+      MASTODON_ACCESS_TOKEN_SOCIAL: "{{ token_social }}"
+      MASTODON_ACCESS_TOKEN_AU: "{{ token_au }}"
+      MASTODON_ACCESS_TOKEN_CLOUD: "{{ token_cloud }}"
+      MASTODON_ACCESS_TOKEN_WORLD: "{{ token_world }}"
+      MASTODON_ACCESS_TOKEN_UK: "{{ token_uk }}"
+      DB_URL: "{{ db_url }}"
+      DB_USERNAME: "{{ db_username }}"
+      DB_PASSWORD: "{{ db_password }}"
