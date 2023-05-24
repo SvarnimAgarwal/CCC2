@@ -1,0 +1,13 @@
+---
+- name: Check if Docker Swarm already exists
+  command: docker info
+  register: docker_info
+  changed_when: false
+  become: yes
+  
+- name: Initialize Docker Swarm if it doesn't exist
+  docker_swarm:
+    state: present
+    advertise_addr: "{{ ansible_host }}"
+  become: yes
+  when: "'Swarm: active' not in docker_info.stdout"

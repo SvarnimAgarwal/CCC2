@@ -1,0 +1,27 @@
+---
+- name: Ensure pip is installed
+  become: yes
+  apt:
+    name: python3-pip
+    state: present
+
+- name: Install docker python library
+  become: yes
+  pip:
+    name: docker
+    state: present
+
+- name: Get Docker Swarm worker join-token from manager
+  become: yes
+  delegate_to: "{{ swarm_manager_ip }}"
+  command: docker swarm join-token worker -q
+  register: worker_token
+  changed_when: false
+
+- name: Join the Docker Swarm
+  become: yes
+  docker_swarm:
+    state: join
+    advertise_addr: "{{ ansible_host }}" 
+    join_token: "{{ worker_token.stdout }}"
+    remote_addrs: ["{{ remote_addr }}"]

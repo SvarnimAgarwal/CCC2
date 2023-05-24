@@ -1,0 +1,9 @@
+---
+- hosts: python-instances
+  #vars_files:
+  # - host_vars/python.yaml
+  gather_facts: true
+  roles:
+    - role: install_dependencies
+    - role: git_clone
+      #- role: run_python_file

@@ -1,0 +1,12 @@
+[DataNodes]
+172.26.134.133
+172.26.136.89
+172.26.133.212
+
+[Masternode]
+172.26.134.133
+
+[DataNodes:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/mastodon.pem
+
