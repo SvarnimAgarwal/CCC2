@@ -1,0 +1,7 @@
+---
+- hosts: harvestor-master
+  vars_files:
+    - host_vars/harvestor.yaml
+  gather_facts: true
+  roles:
+    - role: start-docker-service

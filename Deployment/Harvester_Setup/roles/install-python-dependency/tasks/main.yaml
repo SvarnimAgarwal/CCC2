@@ -1,0 +1,23 @@
+---
+- name: Update apt cache
+  become: yes
+  apt:
+    update_cache: yes
+
+- name: Ensure Python3 is installed
+  become: yes
+  apt:
+    name: python3
+    state: present
+
+- name: Ensure pip is installed
+  become: yes
+  apt:
+    name: python3-pip
+    state: present
+
+- name: Install docker python library
+  become: yes
+  pip:
+    name: docker
+    state: present
