@@ -21,10 +21,6 @@ volumes:
 
 # Security group
 security_groups:
-  - name: administration
-    description: "Security group for remote access via SSH or HTTP "
-  - name: couch_cluster
-    description: "Security group for communication between CouchDB nodes in cluster"
   - name: demo_ssh
     description: "Demo security group for SSH access"
     protocol: tcp
