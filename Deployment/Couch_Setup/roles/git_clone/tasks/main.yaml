@@ -1,0 +1,6 @@
+---
+- name: Clone git project
+  git:
+    repo: https://github.com/SvarnimAgarwal/CCC2.git
+    dest: ~/code/
+    version: main 
